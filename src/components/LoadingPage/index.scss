@@ -1,0 +1,30 @@
+.loading-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 209, 209, 0.616);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .logo-loading {
+        height: 15vmin;
+        pointer-events: none;
+    }
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .logo-loading {
+        animation: logo-spin infinite 5s linear;
+    }
+}
+
+@keyframes logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
